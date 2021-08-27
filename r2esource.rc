@@ -1,0 +1,26 @@
+#include "main.h"
+
+MAINMENU MENU 
+{
+ POPUP "&Инструменты"
+ {
+  MENUITEM "&Открыть...", CM_FILE_OPEN
+  MENUITEM "Сохранить &как...", CM_FILE_SAVEAS
+  MENUITEM SEPARATOR
+  MENUITEM "Выход", CM_FILE_EXIT
+ }
+ POPUP "Расширенные функции" {
+ 	MENUITEM "Версия ПО",CM_VER
+ 	MENUITEM "Мои Github",CM_GIT
+ 	MENUITEM "Проверить Обновление",CM_NEW
+ 	
+ }
+
+ POPUP "&Помощь"{
+ MENUITEM "Как пользоваться?",CM_HELP
+
+  MENUITEM "&О продукте", CM_ABOUT
+  MENUITEM "Протестить Lite Версию",CM_START
+ }
+}
+
